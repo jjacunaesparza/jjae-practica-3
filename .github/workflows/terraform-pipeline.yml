@@ -1,7 +1,10 @@
 name: Terraform CI/CD
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - auto-cd
+  pull_request:
 
 env:
   PLAN: plan.tfplan
