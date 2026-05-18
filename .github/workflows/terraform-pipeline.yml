@@ -114,7 +114,7 @@ jobs:
         run: ls -R
 
       - name: Terraform Apply
-        run: terraform apply -input=false terraform-plan/plan.tfplan
+        run: terraform apply -input=false plan.tfplan
 
 #   destroy:
 #     name: Terraform Destroy
