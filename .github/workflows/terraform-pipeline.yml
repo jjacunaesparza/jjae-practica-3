@@ -3,6 +3,8 @@ name: Terraform CI/CD
 on:
   workflow_dispatch:
 
+env:
+  PLAN: plan.tfplan
 
 jobs:
 
